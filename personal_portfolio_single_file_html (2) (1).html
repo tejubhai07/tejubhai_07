@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tejas — Portfolio</title>
+  <meta name="description" content="Personal portfolio — projects, about, skills & contact">
+  <style>
+    :root{
+      --bg:#000000;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--glass: rgba(255,255,255,0.04);
+      --radius:14px; font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071028 0%, var(--bg) 100%);color:#e6eef8;line-height:1.45}
+    .container{width:min(1100px,94%);margin:0 auto;padding:40px 0}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#22c1c3);display:inline-block}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:36px 0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(6px);border-radius:var(--radius);padding:28px}
+    .hero h1{font-size:clamp(28px,4vw,42px);margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:10px;color:var(--muted);font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .project{padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.02)}
+    .project h4{margin:6px 0}
+    footer{padding:30px 0;color:var(--muted);text-align:center}
+    /* responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.projects{grid-template-columns:repeat(2,1fr)}nav a{display:none}.brand{gap:8px}}
+    @media (max-width:520px){.projects{grid-template-columns:1fr}.container{padding:20px 0}}
+    /* simple floating shape */
+    .profile-card{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+    .profile-photo{display:none;}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .meta{color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" style="display:none"></div>
+        <div>
+          <div style="font-weight:800">Tejas</div>
+          <div class="meta">Under 14 Cricketer · NCC Cadet · High-tech Coder</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    
+
+<section class="hero">
+      <div class="card">
+        <h1>Hi — I’m Tejas</h1>
+        <p>I build clean, accessible web apps and delightful UI. I focus on performance, responsive design and thoughtful UX.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn secondary" href="mailto:youremail@example.com">Get in touch</a>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="meta">Skills</div>
+          <div class="skills">
+            <div class="skill">HTML (80%)</div>
+            <div class="skill">JavaScript (20%)</div>
+            <div class="skill">Unity (10%)</div>
+            <div class="skill">React</div>
+            <div class="skill">Node</div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="meta">Currently</div>
+          <div class="meta">Open to work · Available for freelance</div>
+        </div>
+      </div>
+
+      <aside class="profile-card card">
+        <div class="profile-photo"></div>
+        <div>
+          <div style="font-weight:800">Quick Info</div>
+          <div class="meta">Location: Delhi,India try</div>
+          <div class="meta">Experience: 2+ years</div>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <div class="meta">Email</div>
+            <div>spluv786@gmail.com</div>
+          </div>
+          <div>
+            <div class="meta">Phone</div>
+            <div>+91 92656 30165</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin:18px 0">Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="meta">Web App</div>
+          <h4>Project One</h4>
+          <p class="meta">Short description — what it does and tech used.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">View</a></div>
+        </article>
+
+        <article class="project">
+          <div class="meta">Mobile Web</div>
+          <h4>Project Two</h4>
+          <p class="meta">Short description — what it does and tech used.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">View</a></div>
+        </article>
+
+        <article class="project">
+          <div class="meta">Design System</div>
+          <h4>Project Three</h4>
+          <p class="meta">Short description — what it does and tech used.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">View</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <h2>About</h2>
+      <div class="card" style="margin-top:12px">
+        <p class="meta">Under 14 cricketer, TAFSIAN, NCC cadet, and a high‑tech coder known for WiFi hacking and Insta private ID viewing. I care about clean code, delightful UX and continuous learning.</p>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <h2>Contact</h2>
+      <div class="card" style="margin-top:12px;display:flex;gap:12px;flex-direction:column">
+        <div class="meta">Send a quick message</div>
+        <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+          <input name="name" placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit;margin-top:8px"><br>
+          <input name="email" placeholder="Your email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit;margin-top:8px"><br>
+          <textarea name="message" placeholder="Message" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit;margin-top:8px;min-height:120px"></textarea>
+          <div style="margin-top:10px"><button class="btn" type="submit">Send</button></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      Built with ❤️tejubhai. Tejas • <span class="meta">© <span id="year"></span></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t) t.scrollIntoView({behavior:'smooth'});}));
+  </script>
+  <audio autoplay loop hidden src="/mnt/data/Dil Tu Jaan Tu - Gurnazar.mp3"></audio>
+</body>
+</html>
